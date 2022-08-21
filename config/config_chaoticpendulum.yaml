@@ -1,0 +1,16 @@
+# Experiment information
+Task: KoiPose
+Experimenter: Adam Wiveion
+
+# Path
+data_file_path: AdamPoseData/pose-3d-ChaoticPendulum/adam0_30fps_cam.csv
+video_file_path: AdamPoseData/videos-3d-ChaoticPendulum/adam0_30fps_cam.mp4
+
+# Parameter
+fps: 30
+keypoints: [big_up, big_down, small_up, small_down]
+angle_keypoints: [big_up, big_down, small_up]
+
+
+
+
