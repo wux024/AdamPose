@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdamPose</class>
+ <widget class="QDialog" name="AdamPose">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>3D Pose Estimation and Motion Parameter Visualization</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="GUIContrlLayout">
+    <item>
+     <widget class="QPushButton" name="Start">
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Static">
+      <property name="text">
+       <string>Static</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Pause">
+      <property name="text">
+       <string>Pause</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Quit">
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>281</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="FileContrlLayout">
+    <item>
+     <widget class="QPushButton" name="LoadConfigFile">
+      <property name="text">
+       <string>Load Configuration File</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="EditConfigFile">
+      <property name="text">
+       <string>Edit Configuration File</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="PoseEstimation2D3D">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>150</y>
+     <width>521</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>2D/3D Pose Estimation</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="Trace3D">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>150</y>
+     <width>331</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>3D Motion Trajectory</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="Trace2D">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>430</y>
+     <width>871</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>2D Motion Trajectory</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="Velocity">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>430</y>
+     <width>871</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Velocity</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="Fourier">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>720</y>
+     <width>871</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Fourier Analysis</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="Displacement">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>150</y>
+     <width>871</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Displacement</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="AngleEstimation">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>720</y>
+     <width>871</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Angle Estimation</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>1440</x>
+     <y>30</y>
+     <width>401</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="ShowContrlLayout">
+    <item row="4" column="0">
+     <widget class="QRadioButton" name="AngleEstimationShow">
+      <property name="text">
+       <string>Angle Estimation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QRadioButton" name="Trace3DShow">
+      <property name="text">
+       <string>3D Motion Trajectory</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QRadioButton" name="Trace2DShow">
+      <property name="text">
+       <string>2D Motion Trajectory</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QRadioButton" name="VelocityShow">
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QRadioButton" name="DispalcementShow">
+      <property name="text">
+       <string>Displacement</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QRadioButton" name="FourierShow">
+      <property name="text">
+       <string>Fourier Analysis</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QRadioButton" name="PoseEstimationShow">
+      <property name="text">
+       <string>2D/3D Pose Estimation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="DefaulatShow">
+      <property name="text">
+       <string>Default</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>PoseEstimation2D3D</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>Trace3D</zorder>
+  <zorder>Trace2D</zorder>
+  <zorder>Velocity</zorder>
+  <zorder>Fourier</zorder>
+  <zorder>Displacement</zorder>
+  <zorder>AngleEstimation</zorder>
+  <zorder>gridLayoutWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
