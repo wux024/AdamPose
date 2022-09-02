@@ -1,6 +1,16 @@
 # AdamPose
 This project mainly uses 3D pose estimation to visualize the motion parameters of animals or animal limbs.
 
+In the lab, motion parameters were visualized for four targets.
+
+## Metronome
+
+## Chaos Pendulum
+
+## Hand
+
+## Koi
+
  Please check out the following references for more details:
 
     @article{Wu2022,
