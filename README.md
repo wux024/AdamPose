@@ -4,7 +4,7 @@ This project mainly uses 3D pose estimation to visualize the motion parameters o
 In the lab, motion parameters were visualized for four targets.
 
 ## Metronome
-
+![Metronome](https://user-images.githubusercontent.com/54109895/188260089-5a32b122-a0c2-4245-8434-8d9e2da8d9c8.png)
 
 ## Chaos Pendulum
 
